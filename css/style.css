@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansB;
+    src: url(../letras/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansBI;
+    src: url(../letras/NunitoSans-BoldItalic.ttf);
+}
+
+
+@font-face {
+    font-family: RobotoM;
+    src: url(../letras/RobotoMono-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoB;
+    src: url(../letras/RobotoMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoR;
+    src: url(../letras/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: PopinB;
+    src: url(../letras/Poppins-Bold.ttf);
+}
+
+header {
+    background-color: #FC0A0A;
+    padding: 1% 0;
+    font-size:120% ;
+    font-family: PopinB;
+}
+header img {
+    width: 100%; 
+}
+
+#nave .navbar-nav .nav-link {
+    color: white;
+    font-weight: 900;
+    transition: color 0.3s ease;
+}
+
+#nave .navbar-nav .nav-item {
+    margin: 0 15px;
+    padding-top: 8%;
+    
+     
+}
+
+#nave .navbar-nav .nav-link:hover {
+    color:#ffac26 ;
+}
+
+.navbar {
+    padding: 0;
+    background-color: transparent !important; 
+}
+
+.navbar-collapse {
+    justify-content: flex-end; 
+}
+#main1 {
+    overflow: hidden; 
+}
+
+#main1 img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+#main2{
+   padding-top: 5%;
+   
+}
+#main2 img{
+    width: 60%;
+}
+#main3{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+#saiba{
+    font-size: 250%;
+    text-align: center;
+    color:#ffac26  ;
+    font-family: NunitoSansBI;
+    
+}
+.carrossel {
+    padding-top: 1%;
+    width: 70%; 
+    height: auto;      
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+
+.texto {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    background-color: #ffac26  ;
+    border-radius: 20%;
+    color: black;
+    font-family: NunitoSansBI;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.slides img {
+    width: 100%; 
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover; 
+    
+}
+
+
+#jogo {
+    position: relative;
+    overflow: hidden; 
+    height: auto; 
+    display: flex;               
+    justify-content: center;     
+    align-items: center;  
+}
+
+#jogo img {
+    
+    width: 70%; 
+    height: 100%;
+    object-fit: contain; 
+}
+
+
+footer{
+    padding-top: 2%;
+    background-color:#FC0A0A ;
+    
+}
+#midias{
+    padding-top: 3%;
+    padding-left: 10%;
+
+}
+#midias img{
+    width: 6%;
+    margin-right: 2%;
+    
+}
+#mapa{
+    padding-left: 10%;
+
+}
+#mapa img{
+    margin-right: 5%;
+}
+p{
+    font-family: NunitoSansB;
+    color:white;
+    
+}
+p:hover{
+    color: #ffac26;
+      
+}
+
+#produzidopor{
+    color: white;
+    font-family:NunitoSansR;
+    text-align: center;
+    padding-bottom: 0.5%;
+   
+}
+#produzidopor hr {
+    margin: 10px auto;
+    width: 90%;
+
+}
+
+#empresa{
+    color: white;
+
+}
+
+#empresa:hover{
+    color: #ffac26;
+
+}
+
+
+
+
+   
+@media (max-width: 767px) {
+body {
+        overflow-x: hidden;
+    }
+#main2 .row {
+
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 10px;     
+    }
+    
+#main2 .col-md-3 {
+
+            flex: 1 1 calc(25% - 10px); 
+            max-width: 25%; 
+            text-align: center; 
+        }
+    
+#main2 img {
+
+            width: 100%;
+            height: auto; 
+        }
+
+#saiba{
+
+            font-size: 200%;
+            text-align: center;
+            color:#ffac26  ;
+            font-family: NunitoSansBI;
+            
+     } 
+
+     .carrossel {
+        padding-top: 1%;
+        width: 90%; 
+        height: auto;      
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: auto;  
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+    
+    
+    .texto {
+        position: absolute;
+        bottom: 10px;
+        font-size: 15px;
+        background-color: #ffac26  ;
+        border-radius: 20%;
+        color: black;
+        font-family: NunitoSansBI;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0.8;
+    }
+    
+    .slides img {
+        width: 100%; 
+        height: 100%;
+        flex-shrink: 0;
+        object-fit: cover; 
+        
+    }
+    
+    
+    #jogo {
+        padding-top: 5%;
+        position: relative;
+        overflow: hidden; 
+        height: auto; 
+        display: flex;               
+        justify-content: center;     
+        align-items: center;  
+    }
+    
+    #jogo img {
+        
+        width: 90%; 
+        height: 100%;
+        object-fit: contain; 
+    }
+    footer .container-fluid .row {
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;     
+        align-items: center;    
+            }
+
+    #midias,
+    #mapa {
+        width: 48%;        
+        margin: 0;  
+    }
+
+    #midias img
+     {
+        width: 20%;     
+        height: auto;   
+    }
+    #mapa img{
+        width: 30%;     
+        height: auto;
+    }
+
+    #midias a,
+    #mapa a {
+        display: flex;
+        flex-direction: column;     
+        align-items: center;    
+    }
+
+    #midias p,
+    #mapa p {
+        margin-top: 10px;   
+        font-size: 14px;    
+    }
+
+    
+    
+}
+    
+    
+    
+    
+    
+
+
+
+
+
+
