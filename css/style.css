@@ -193,12 +193,12 @@ footer{
 #mapa img{
     margin-right: 5%;
 }
-p{
+#p{
     font-family: NunitoSansB;
     color:white;
     
 }
-p:hover{
+#p:hover{
     color: #ffac26;
       
 }
