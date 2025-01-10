@@ -3,9 +3,6 @@
     margin: 0;
     padding:0;
 }
-body {
-    overflow-x: hidden;
-}
 
 @font-face {
     font-family: NunitoSansR;
@@ -42,51 +39,83 @@ body {
     src: url(../letras/Poppins-Bold.ttf);
 }
 
-.custom-header {
-
+#custom-header {
     background-color: #FC0A0A;
     padding-top: 2%;
     padding-bottom: 2%;
-    display: flex; 
+    display: flex;
     justify-content: center; 
-    align-items: center;
-    height: auto; 
-    
 }
-.custom-img {
-    width: 30%;
-    display: block; 
+#custom-header img {
+    width: 40%;
     height: auto; 
 }
-.custom-main {
+#custom-main {
     background-image: url('../imgs/calendarioFundo.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center; 
-    height: 100vh; 
+    background-position: center;
     width: 100%;
+    height: auto;
+    color:white ;
     text-align: center;
 
 }
-.custom-link {
+#custom-main img{
+    width:50%;
+}
+#custom-link {
     color: white;
     text-decoration: none;
     font-size: 150%;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
     
 }
-.custom-link:hover {
-    color: #FC0A0A; 
+#custom-link:hover {
+    color: #FCB717; 
+}
+#marc img, #abr img, #maio img{
+    width: 22%;
+}
+#fev,#marc,#abr,#maio,#jun{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+h1{
+   
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white; 
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red; 
+    
+}
+h4{
+    padding-bottom: 2%;
+    color: #FCB717;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    
 }
 
-
-
+h6{
+    color: white;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red; 
+}
 
 @media (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
 
-    .custom-img {
+    #custom-img {
         width: 90%;
         display: block; 
         height: auto; 
