@@ -47,6 +47,8 @@ header {
     padding: 1% 0;
     font-size:120% ;
     font-family: PopinB;
+    border: 2px solid black; 
+    box-shadow: 0 0 10px 1px black;
 }
 header img {
     width: 100%; 
@@ -178,7 +180,8 @@ header img {
 footer{
     padding-top: 2%;
     background-color:#FC0A0A ;
-    
+    border: 2px solid black; 
+    box-shadow: 0 0 10px 1px black;
 }
 #midias{
     padding-top: 2%;
