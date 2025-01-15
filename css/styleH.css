@@ -8,28 +8,13 @@ body {
 }
 
 @font-face {
-    font-family: NunitoSansR;
-    src: url(../letras/NunitoSans-Regular.ttf);
+    font-family: RobotoB;
+    src: url(../letras/RobotoMono-Bold.ttf);
 }
-
-@font-face {
-    font-family: NunitoSansB;
-    src: url(../letras/NunitoSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: NunitoSansBI;
-    src: url(../letras/NunitoSans-BoldItalic.ttf);
-}
-
 
 @font-face {
     font-family: RobotoM;
     src: url(../letras/RobotoMono-Medium.ttf);
-}
-@font-face {
-    font-family: RobotoB;
-    src: url(../letras/RobotoMono-Bold.ttf);
 }
 
 @font-face {
@@ -37,59 +22,146 @@ body {
     src: url(../letras/RobotoMono-Regular.ttf);
 }
 
-@font-face {
-    font-family: PopinB;
-    src: url(../letras/Poppins-Bold.ttf);
-}
 
-.custom-header {
+
+#custom-header {
 
     background-color: #FC0A0A;
     padding-top: 2%;
     padding-bottom: 2%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    height: auto; 
+    display: flex;
+    justify-content: center;
+    border: 2px solid black; 
+    box-shadow: 0 0 10px 1px black;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;   
     
 }
-.custom-img {
-    width: 30%;
-    display: block; 
+#custom-header img {
+    width: 40%;
     height: auto; 
 }
-.custom-main {
+
+#custom-main {
     background-image: url('../imgs/calendarioFundo.png'); 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position: center; 
-    height: 100vh; 
+    background-position: center;
     width: 100%;
-    text-align: center;
-
+    height: auto;
+    color:white ;
 }
-.custom-link {
-    color: white;
-    text-decoration: none;
-    font-size: 150%;
+#title-section h1 {
+    font-family: RobotoM;
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #FFD700;
     
 }
-.custom-link:hover {
-    color: #FC0A0A; 
+
+
+#intro-section, #values-section, #final-message {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 8% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    max-width: 800px;
+}
+
+#timeline-section {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 15% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    max-width: 800px;
+}
+
+#timeline-section h2 {
+    
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+#timeline-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#timeline-section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 3px solid #FF6D00;
+    padding-left: 10px;
 }
 
 
+#final-message p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
 
+
+#custom-link {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+#custom-link img{
+    width: 2%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#custom-link:hover img {
+    transform: scale(1.5); 
+    filter: brightness(1.2); 
+ }   
 
 @media (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
+    #custom-header img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right:1% ;
+        padding-left:1% ;
+        width: 100%;
+        
+    }
+    
+    #custom-link img{
 
-    .custom-img {
-        width: 90%;
-        display: block; 
-        height: auto; 
-    }  
+        width: 10%;
+        
+    }
+    #title-section h1{
+        
+        font-size: 200%;
+        padding-top: 10%;
+    }
+    #values-section {
+        
+        padding-top:15%;
+        padding-bottom: 10%;
+        
+    }
+
+    #final-message  {
+        margin-top: 45%;
+        margin-bottom: 25%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    
+    
     
 }
