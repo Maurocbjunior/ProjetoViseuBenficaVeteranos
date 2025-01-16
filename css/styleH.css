@@ -8,20 +8,19 @@ body {
 }
 
 @font-face {
-    font-family: RobotoB;
-    src: url(../letras/RobotoMono-Bold.ttf);
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: RobotoM;
-    src: url(../letras/RobotoMono-Medium.ttf);
+    font-family: NunitoSansB;
+    src: url(../letras/NunitoSans-Bold.ttf);
 }
 
 @font-face {
-    font-family: RobotoR;
-    src: url(../letras/RobotoMono-Regular.ttf);
+    font-family: NunitoSansBI;
+    src: url(../letras/NunitoSans-BoldItalic.ttf);
 }
-
 
 
 #custom-header {
@@ -55,10 +54,16 @@ body {
     color:white ;
 }
 #title-section h1 {
-    font-family: RobotoM;
+    font-family: NunitoSansBI;
     padding-top: 5%;
     padding-left: 5%;
     color: #FFD700;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    
     
 }
 
@@ -82,10 +87,16 @@ body {
 }
 
 #timeline-section h2 {
-    
+    font-family: NunitoSansBI;
     text-align: center;
     color: #FFD700;
     margin-bottom: 15px;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    
 }
 
 #timeline-section ul {

@@ -105,6 +105,11 @@ header img {
     padding-bottom: 5%;
     
 }
+#main3 a{
+    color: black;
+    
+}
+
 #saiba{
     font-size: 250%;
     text-align: center;
@@ -171,9 +176,10 @@ header img {
 
 #jogo img {
     
-    width: 70%; 
+    width: 65%; 
     height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
+    padding-top: 12%; 
 }
 
 
@@ -199,6 +205,7 @@ footer{
 }
 #mapa img{
     margin-right: 5%;
+    
 }
 #p{
     font-family: NunitoSansB;
