@@ -70,6 +70,44 @@
     </main>
       
     <script>
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const titles = document.querySelectorAll("#title-section h1");
+
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target); 
+            }
+        });
+    });
+
+    
+    titles.forEach(title => observer.observe(title));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const paragraph = entry.target;
+                paragraph.style.opacity = "1"; // 
+                observer.unobserve(paragraph); 
+            }
+        });
+    }, {
+        threshold: 0.2 
+    });
+
+    const finalMessageParagraph = document.querySelector("#final-message p");
+    if (finalMessageParagraph) {
+        observer.observe(finalMessageParagraph);
+    }
+});
+
 
     </script>
     

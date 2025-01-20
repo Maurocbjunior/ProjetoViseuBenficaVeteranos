@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico</title>
+
+    <link rel="stylesheet" href="css/styleJ.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgs/logoViseuBenfica.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header id="custom-header">
+        <img src="imgs/logotipo.png" alt="Logotipo" class="custom-img">
+    </header>
+
+    <main id="custom-main">
+
+        
+        <div id="title-section">
+            
+            <h1><img src="imgs/eduardo.png" alt="">Crônica do Jogo </h1>
+        </div>
+
+    
+        <div id="intro-section">
+            <img src="imgs/vilanovense1.png" alt="">
+            <p>
+                ...Após ter terminado o período das festas Natalícias e consequentemente dos respectivos excessos... retomamos os nossos 
+                jogos com a deslocação a V.N. De Tazem, para defrontarmos a equipa dos nossos amigos C.F. 
+                " OS VILANOVENSES " . Numa partida bem disputada , com fair-play e espírito veterano , havendo momentos de bom futebol e bons golos...com ambas as formações em busca da
+                vitória...
+                
+                                     No global ( 80' + 3') a equipa do
+                S.V.B., através de um jogo bem conseguido, acabou por ser um justo vencedor, pois foi a melhor equipa ( neste jogo...), apesar da diferença no marcador ser algo exagerada,
+                perante uma formação C.F.V., bem organizada,
+                que tudo fez , para contrariar o bom jogo dos
+                " Viseenses", valorizando assim, ainda mais 
+                a  respectiva vitória...
+                
+                                        Bom trabalho do Trio de Arbitragem!
+            </p>
+        </div>
+
+        
+        <a href="index.html" id="custom-link" ><img src="imgs/voltar.png" alt="voltar" ></a>
+
+    </main>
+      
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const titles = document.querySelectorAll("h1");
+
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target); 
+            }
+        });
+    });
+
+    
+    titles.forEach(title => observer.observe(title));
+});
+
+
+    </script>
+    
+</body>
+</html>

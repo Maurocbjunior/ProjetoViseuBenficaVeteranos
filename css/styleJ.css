@@ -53,9 +53,13 @@ body {
     height: auto;
     color:white ;
 }
+h1 img{
+    width: 15%;
+    padding-right: 1%;
+}
 #title-section h1 {
     font-family: NunitoSansBI;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-left: 5%;
     color: #FFD700;
     text-shadow: 
@@ -63,8 +67,7 @@ body {
         -1px -1px 0px black,
         1px -1px 0px black,
         -1px 1px 0px black;
-    
-    
+      
 }
 #title-section h1 {
     opacity: 0;
@@ -78,54 +81,19 @@ body {
 }  
 
 
-#intro-section, #values-section, #final-message {
+#intro-section {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    margin: 8% auto;
+    margin: 2% auto;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
     max-width: 800px;
-}
-
-#timeline-section {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    margin: 15% auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-    max-width: 800px;
-}
-
-#timeline-section h2 {
-    font-family: NunitoSansBI;
     text-align: center;
-    color: #FFD700;
-    margin-bottom: 15px;
-    text-shadow: 
-        1px 1px 0px black,  
-        -1px -1px 0px black,
-        1px -1px 0px black,
-        -1px 1px 0px black;
-    
 }
-
-#timeline-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-#timeline-section ul li {
-    margin: 10px 0;
-    padding: 10px;
-    border-left: 3px solid #FF6D00;
-    padding-left: 10px;
-}
-
-
-#final-message p {
-    text-align: center;
-    font-size: 1.2rem;
-    font-style: italic;
+#intro-section img {
+    padding-bottom: 2%;
+    width: 30%;
+   
 }
 
 
@@ -145,13 +113,6 @@ body {
     filter: brightness(1.2); 
  }
 
- #final-message p {
-    opacity: 0; 
-    transition: opacity 5s ease-in-out; 
-}
-
-
-
 
 @media (max-width: 767px) {
     body {
@@ -165,7 +126,18 @@ body {
         width: 100%;
         
     }
+   
+    h1 img{
+        width: 30%;
+     
+    }
+    #intro-section img {
+        
+        width: 50%;
+       
+    }
     
+
     #custom-link img{
 
         width: 10%;

@@ -59,12 +59,23 @@
             <div id="marc">
 
                 <h4>Março</h4>
-
-                <div>
-                    <h6>Dia-29</h6>  
-                    <img src="imgs/vilanovense.png" alt="vilanovense">
+                <div class="container-fluid">
+                    <div class="row">
+                    
+                        <div class="col-md-6">
+                            <h6>Dia-15</h6>
+                            <img src="imgs/selecao.png" alt="canelas">
                         
-                </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h6>Dia-29</h6>
+                            <img src="imgs/vilanovense.png" alt="vilanovense">
+                        
+                        </div>
+                    </div> 
+                </div>      
+               
             </div>
 
                 
@@ -119,6 +130,24 @@
         </main>
         
         <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const paragraph = entry.target;
+                paragraph.style.opacity = "1"; // 
+                observer.unobserve(paragraph); 
+            }
+        });
+    }, {
+        threshold: 0.2 
+    });
+
+    const finalMessageParagraph = document.querySelector("#custom-main");
+    if (finalMessageParagraph) {
+        observer.observe(finalMessageParagraph);
+    }
+});
 
         </script>
         

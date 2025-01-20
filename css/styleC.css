@@ -66,6 +66,8 @@
     height: auto;
     color:white ;
     text-align: center;
+    opacity: 0; 
+    transition: opacity 3s ease-in-out; 
 
 }
 #custom-main img{
@@ -81,7 +83,7 @@
     filter: brightness(1.2); 
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-#marc img, #abr img, #maio img{
+#abr img, #maio img{
     width: 22%;
 }
 #fev,#marc,#abr,#maio,#jun{
@@ -95,8 +97,10 @@ h1{
     padding-bottom: 5%;
     color: white; 
     text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red; 
-    
+     
 }
+
+
 h4{
     padding-bottom: 2%;
     color: #FCB717;
@@ -128,9 +132,11 @@ h6{
         width:70%;
         
     } 
-    #marc img, #abr img, #maio img{
+    
+    #abr img, #maio img{
         width: 65%;
-    } 
+    }
+     
     #custom-link img{
         width: 5%;
         
