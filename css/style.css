@@ -38,7 +38,7 @@ body {
 }
 
 @font-face {
-    font-family: PopinB;
+    font-family: PopinsB;
     src: url(../letras/Poppins-Bold.ttf);
 }
 
@@ -46,9 +46,13 @@ header {
     background-color: #FC0A0A;
     padding: 1% 0;
     font-size:120% ;
-    font-family: PopinB;
+    font-family: PopinsB;
     border: 2px solid black; 
     box-shadow: 0 0 10px 1px black;
+    position: sticky;
+    top: 0; 
+    left: 0;
+    z-index: 1000;
 }
 header img {
     width: 100%; 
@@ -79,8 +83,11 @@ header img {
 .navbar-collapse {
     justify-content: flex-end; 
 }
+
+
 #main1 {
-    overflow: hidden; 
+    overflow: hidden;
+    
 }
 
 #main1 img {
@@ -193,7 +200,7 @@ footer{
     box-shadow: 0 0 10px 1px black;
 }
 #midias{
-    padding-top: 2%;
+  
     padding-left: 10%;
 
 }
@@ -208,6 +215,7 @@ footer{
 }
 #mapa img{
     margin-right: 5%;
+    width: 15%;
     
 }
 #p{
@@ -250,6 +258,7 @@ footer{
     body {
         overflow-x: hidden;
     }
+    
     #main2 .row {
 
             display: flex;
