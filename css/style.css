@@ -42,6 +42,7 @@ body {
     src: url(../letras/Poppins-Bold.ttf);
 }
 
+
 header {
     background-color: #FC0A0A;
     padding: 1% 0;
@@ -52,7 +53,7 @@ header {
     position: sticky;
     top: 0; 
     left: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 header img {
     width: 100%; 
@@ -257,6 +258,11 @@ footer{
 
     body {
         overflow-x: hidden;
+    }
+    header {
+       
+        padding-top: 5%;
+        
     }
     
     #main2 .row {
