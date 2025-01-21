@@ -57,6 +57,11 @@
     width: 40%;
     height: auto; 
 }
+
+header img:hover {
+    transform: none;
+    filter: none;
+}
 #custom-main {
     background-image: url('../imgs/calendarioFundo.png'); 
     background-size: cover; 
@@ -68,6 +73,13 @@
     text-align: center;
     opacity: 0; 
     transition: opacity 3s ease-in-out; 
+
+}
+img:hover{
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
 
 }
 #custom-main img{
@@ -94,6 +106,7 @@
     padding-bottom: 3%;
     
 }
+
 h1{
    
     padding-top: 5%;
