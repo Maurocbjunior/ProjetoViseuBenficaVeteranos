@@ -120,6 +120,25 @@ body {
     border-left: 3px solid #FF6D00;
     padding-left: 10px;
 }
+.highlight {
+    color: white; 
+    font-weight: bold; 
+    text-shadow: none; 
+    animation: goldenGlow 3s ease-in-out infinite alternate; 
+}
+
+
+@keyframes goldenGlow {
+    from {
+        color: white; 
+        text-shadow: none; 
+    }
+    to {
+        color: #FFD700; 
+        text-shadow: 0 0 0.5px #FFD700, 0 0 1px #FFC107, 0 0 1.5px #FFA000; 
+    }
+}
+
 
 
 #final-message p {

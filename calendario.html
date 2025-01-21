@@ -3,153 +3,259 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Calendário</title>
-
         <link rel="stylesheet" href="css/styleC.css">
-
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
         <link rel="shortcut icon" href="imgs/logoViseuBenfica.png" type="image/x-icon">
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-
     <body>
 
-        <header id="custom-header" >
-
+        <header id="custom-header">
             <img src="imgs/logotipo.png" alt="Logotipo" class="custom-img">
-
         </header>
 
         <main id="custom-main">
-
             <h1>Calendário-2025</h1>
 
             <div id="fev">
-
                 <h4>Fevereiro</h4>
-
                 <div class="container-fluid">
                     <div class="row">
-                    
                         <div class="col-md-6">
                             <h6>Dia-8</h6>
-                            <img src="imgs/canelas.png" alt="canelas">
-                        
+                            <img src="imgs/canelas.png" alt="canelas" data-toggle="modal" data-target="#modalCanelas">
                         </div>
-                        
                         <div class="col-md-6">
                             <h6>Dia-22</h6>
-                            <img src="imgs/celoricense.png" alt="celoricense">
-                        
+                            <img src="imgs/celoricense.png" alt="celoricense" data-toggle="modal" data-target="#modalCeloricense">
                         </div>
-                    </div> 
-                </div>       
-                            
-                    
+                    </div>
+                </div>
             </div>
-             
-            <div id="marc">
 
+            <div id="marc">
                 <h4>Março</h4>
                 <div class="container-fluid">
                     <div class="row">
-                    
                         <div class="col-md-6">
                             <h6>Dia-15</h6>
-                            <img src="imgs/selecao.png" alt="canelas">
-                        
+                            <img src="imgs/selecao.png" alt="selecao" data-toggle="modal" data-target="#modalSelecao">
                         </div>
-                        
                         <div class="col-md-6">
                             <h6>Dia-29</h6>
-                            <img src="imgs/vilanovense.png" alt="vilanovense">
-                        
+                            <img src="imgs/vilanovense.png" alt="vilanovense" data-toggle="modal" data-target="#modalVilanovense">
                         </div>
-                    </div> 
-                </div>      
-               
+                    </div>
+                </div>
             </div>
 
-                
             <div id="abr">
-
                 <h4>Abril</h4>
-
                 <div>
-                     <h6>Dia-12</h6>   
-                    <img src="imgs/lamego.png" alt="lamego">
-                        
+                    <h6>Dia-12</h6>
+                    <img src="imgs/lamego.png" alt="lamego" data-toggle="modal" data-target="#modalLamego">
                 </div>
-
             </div>
-                
+
             <div id="maio">
-
                 <h4>Maio</h4>
-
                 <div>
-                    <h6>Dia-3</h6>  
-                    <img src="imgs/chaves.png" alt="chaves">
-                        
+                    <h6>Dia-3</h6>
+                    <img src="imgs/chaves.png" alt="chaves" data-toggle="modal" data-target="#modalChaves">
                 </div>
             </div>
-
 
             <div id="jun">
                 <h4>Junho</h4>
                 <div class="container-fluid">
-                    <div class="row" >
-                        <div class="col-md-6">
-                            <h6>Dia-7</h6>
-                            <img src="imgs/lagoa.png" alt="lagoa">
-                                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Dia-7-"Algarve"</h6>
+                            <img src="imgs/lagoa.png" alt="lagoa" data-toggle="modal" data-target="#modalLagoa1">
                         </div>
-
-                        <div class="col-md-6">
-                            <h6>Dia-21</h6>      
-                            <img src="imgs/mesaoFrio.png" alt="mesaoFrio">
-                                    
+                        <div class="col-md-4">
+                            <h6>Dia-9-"Algarve"</h6>
+                            <img src="imgs/lagoa.png" alt="lagoa" data-toggle="modal" data-target="#modalLagoa2">
                         </div>
-
+                        <div class="col-md-4">
+                            <h6>Dia-21</h6>
+                            <img src="imgs/mesaoFrio.png" alt="mesaoFrio" data-toggle="modal" data-target="#modalMesaoFrio">
+                        </div>
                     </div>
-                                
-                </div>         
+                </div>
             </div>
 
-            <a href="index.html" id="custom-link" ><img src="imgs/voltar.png" alt="voltar" ></a>
-            
+            <a href="index.html" id="custom-link"><img src="imgs/voltar.png" alt="voltar"></a>
 
         </main>
+
+        <div class="modal fade" id="modalCanelas" tabindex="-1" aria-labelledby="modalCanelasLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCanelasLabel"> Estádio do CF Canelas-18hs</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/canelas.png" class="img-fluid" alt="canelas">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalCeloricense" tabindex="-1" aria-labelledby="modalCeloricenseLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalCeloricenseLabel">Celoricense - Dia 22</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/celoricense.png" class="img-fluid" alt="celoricense">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalSelecao" tabindex="-1" aria-labelledby="modalSelecaoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSelecaoLabel">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalVilanovense" tabindex="-1" aria-labelledby="modalVilanovenseLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalVilanovenseLabel">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLamego" tabindex="-1" aria-labelledby="modalLamegoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLamegoLabel">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalChaves" tabindex="-1" aria-labelledby="modalChavesLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalChavesLabel">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLagoa1" tabindex="-1" aria-labelledby="modalLagoa1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLagoa1Label">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLagoa2" tabindex="-1" aria-labelledby="modalLagoa2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLagoa2Label">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalMesaoFrio" tabindex="-1" aria-labelledby="modalMesaoFrioLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalMesaoFrioLabel">Seleção - Dia 15</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgs/selecao.png" class="img-fluid" alt="selecao">
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <script>
-document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const paragraph = entry.target;
-                paragraph.style.opacity = "1"; // 
-                observer.unobserve(paragraph); 
-            }
-        });
-    }, {
-        threshold: 0.2 
-    });
+            document.addEventListener("DOMContentLoaded", () => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const paragraph = entry.target;
+                            paragraph.style.opacity = "1"; // Fade-in effect
+                            observer.unobserve(paragraph); 
+                        }
+                    });
+                }, {
+                    threshold: 0.2 
+                });
 
-    const finalMessageParagraph = document.querySelector("#custom-main");
-    if (finalMessageParagraph) {
-        observer.observe(finalMessageParagraph);
-    }
-});
-
+                const finalMessageParagraph = document.querySelector("#custom-main");
+                if (finalMessageParagraph) {
+                    observer.observe(finalMessageParagraph);
+                }
+            });
         </script>
-        
+
     </body>
 </html>

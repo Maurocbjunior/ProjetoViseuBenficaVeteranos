@@ -86,6 +86,9 @@
 #abr img, #maio img{
     width: 22%;
 }
+#jun img{
+    width: 78%;
+}
 #fev,#marc,#abr,#maio,#jun{
     padding-top: 3%;
     padding-bottom: 3%;
