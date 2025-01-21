@@ -110,7 +110,7 @@ header img {
     
 }
 
-#saiba{
+#noticias{
     font-size: 250%;
     text-align: center;
     color:#ffac26  ;
@@ -143,35 +143,37 @@ header img {
 }
 
 
-.texto {
+#texto {
     position: absolute;
     bottom: 10px;
-    font-size: 20px;
-    background-color: #ffac26  ;
-    border-radius: 20%;
-    color: black;
-    font-family: NunitoSansBI;
-    font-weight: bold;
     text-align: center;
-    opacity: 0.8;
+    
 }
-
+#texto a{
+    color: white;
+    background-color: red ;
+    font-family: NunitoSansB;
+    font-size: 100%;
+}
+#texto a:hover{
+    color:black;
+}
 .slides img {
     width: 100%; 
     height: 100%;
     flex-shrink: 0;
-    object-fit: cover; 
+    object-fit: cover;
+    border-radius: 5%;
+    border:solid 1px black; 
     
 }
 
 
 #jogo {
-    position: relative;
-    overflow: hidden; 
-    height: auto; 
-    display: flex;               
-    justify-content: center;     
-    align-items: center;  
+    text-align: center;
+}
+#jogo:hover{
+    transform: scale(1.1); 
 }
 
 #jogo img {
@@ -179,7 +181,8 @@ header img {
     width: 65%; 
     height: 100%;
     object-fit: contain;
-    padding-top: 12%; 
+    padding-top: 12%;
+     
 }
 
 
@@ -221,8 +224,8 @@ footer{
     color: white;
     font-family:NunitoSansR;
     text-align: center;
-    padding-bottom: 2%;
-    font-size: 60%;
+    padding-bottom: 1%;
+    font-size: 70%;
    
 }
 #produzidopor hr {
@@ -243,10 +246,11 @@ footer{
 
 
 @media (max-width: 767px) {
-body {
+    
+    body {
         overflow-x: hidden;
     }
-#main2 .row {
+    #main2 .row {
 
             display: flex;
             flex-wrap: wrap; 
@@ -255,20 +259,20 @@ body {
             gap: 10px;     
     }
     
-#main2 .col-md-3 {
+    #main2 .col-md-3 {
 
             flex: 1 1 calc(25% - 10px); 
             max-width: 25%; 
             text-align: center; 
         }
     
-#main2 img {
+    #main2 img {
 
             width: 100%;
             height: auto; 
         }
 
-#saiba{
+    #noticias{
 
             font-size: 200%;
             text-align: center;
@@ -277,7 +281,7 @@ body {
             
      } 
 
-     .carrossel {
+    .carrossel {
         padding-top: 1%;
         width: 90%; 
         height: auto;      
@@ -303,17 +307,11 @@ body {
     }
     
     
-    .texto {
-        position: absolute;
-        bottom: 10px;
-        font-size: 15px;
-        background-color: #ffac26  ;
-        border-radius: 20%;
-        color: black;
-        font-family: NunitoSansBI;
-        font-weight: bold;
-        text-align: center;
-        opacity: 0.8;
+    #texto a{
+        color: white;
+        background-color: red ;
+        font-family: NunitoSansB;
+        font-size: 80%;
     }
     
     .slides img {
@@ -377,7 +375,11 @@ body {
         font-size: 14px;    
     }
 
-    
+    #produzidopor{
+        
+        font-size: 60%;
+       
+    }
     
 }
     
