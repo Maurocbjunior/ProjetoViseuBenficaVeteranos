@@ -151,14 +151,6 @@ body {
 }
 
 
-
-#final-message p {
-    text-align: center;
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-
 #custom-link {
     display: flex;
     justify-content: center; 
@@ -175,14 +167,7 @@ body {
     filter: brightness(1.2); 
  }
 
- #final-message p {
-    opacity: 0; 
-    transition: opacity 5s ease-in-out; 
-}
-
-
-
-
+ 
 
 @media (max-width: 767px) {
     body {
@@ -211,17 +196,13 @@ body {
         
         padding-top:15%;
         padding-bottom: 10%;
+        text-align: center;
         
     }
-
-    #final-message  {
-        margin-top: 45%;
-        margin-bottom: 25%;
-        text-align: center;
-        font-size: 1.2rem;
-        font-style: italic;
+    #intro-section img{
+        width: 100%;
     }
-    
+
     
     
 }

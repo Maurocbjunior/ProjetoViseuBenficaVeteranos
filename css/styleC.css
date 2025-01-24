@@ -62,6 +62,12 @@ header img:hover {
     transform: none;
     filter: none;
 }
+section img:hover {
+    transform: none;
+    filter: none;
+}
+
+
 #custom-main {
     background-image: url('../imgs/calendarioFundo.png'); 
     background-size: cover; 
