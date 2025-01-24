@@ -120,6 +120,17 @@ body {
     border-left: 3px solid #FF6D00;
     padding-left: 10px;
 }
+#timeline-section a{
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    color: white;
+    
+}
+#timeline-section a:hover{
+    transform: scale(1.08);
+}
+
+
 .highlight {
     color: white; 
     font-weight: bold; 
@@ -168,6 +179,7 @@ body {
     opacity: 0; 
     transition: opacity 5s ease-in-out; 
 }
+
 
 
 
