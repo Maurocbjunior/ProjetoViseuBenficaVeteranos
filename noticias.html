@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Noticias</title>
+
+    <link rel="stylesheet" href="css/styleN.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgs/logoViseuBenfica.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header id="custom-header">
+        <img src="imgs/logotipo.png" alt="Logotipo" class="custom-img">
+    </header>
+
+    <main id="custom-main">
+
+        
+        <div id="title-section">
+            <h1>O primeiro confronto...</h1>
+        </div>
+
+    
+        <div id="intro-section">
+            <p>
+                ...No dia 16 de junho de 2007, ocorreu o baptismo dos veteranos viseenses.A equipe visitante foi o clube de Mangualde, o Mesquitela , que trouxe igualmente as suas "velhas glórias" para competirem amigavelmente com o Viseu Benfica. O marcador nestas ocasiões pouco ou nada interessa, saldando-se, contudo, o bom resultado na estréia dos viseenses que bateram os adversários por tres bolas a zero.Para este primeiro jogo, que decorreu no 1 de Maio, em Fontelo, a equipe técnica, liderada temporariamente pelo presidente do clube, <span>Sr Lúcio Costa</span>, escolheu os seguintes jogadores: <span>Figueiredo</span>, Lemos, Leitão, Burgos, <span>Miguel</span>, Betinho, Rui Figueiredo, Ademir, Ramiro, Sequeira, Zé Chaves, Vitor Santos, Vítor Rodrigues, Paulo e <span>Zeca Russo</span>. Os marcadores dos golos foram Rui Figueiredo, <span>Miguel</span> e Vitor Rodrigues...
+            </p>
+            <img src="imgs/noticia.png" alt="noticia">
+        </div>
+
+        <div id="title-section">
+            <h1>Em Destaque...</h1>
+        </div>
+        <div id="values-section">
+
+           
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                        <img src="imgs/lucio.png" alt="Lucio" >
+                        <h6>"Sr.Lucio Costa"<br>Fundador</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="imgs/figueiredo.png" alt="Figueiredo" >
+                        <h6>"Figueiredo" <br>Participante </h6>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        
+                        <img src="imgs/miguel.png" alt="Miguel" >
+                        <h6>"Miguel" <br>Artilheiro</h6>
+                    </div>
+                    <div class="col-md-3">
+                        
+                        <img src="imgs/jose.png" alt="José" >
+                        <h6>"Zeca Russo" <br>Participante</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        </div>
+        <a href="index.html" id="custom-link" ><img src="imgs/voltar.png" alt="voltar" ></a>
+
+    </main>
+      
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const titles = document.querySelectorAll("#title-section h1");
+
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target); 
+            }
+        });
+    });
+
+    
+    titles.forEach(title => observer.observe(title));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const paragraph = entry.target;
+                paragraph.style.opacity = "1"; // 
+                observer.unobserve(paragraph); 
+            }
+        });
+    }, {
+        threshold: 0.2 
+    });
+
+    const finalMessageParagraph = document.querySelector("#final-message p");
+    if (finalMessageParagraph) {
+        observer.observe(finalMessageParagraph);
+    }
+});
+
+
+    </script>
+    
+</body>
+</html>

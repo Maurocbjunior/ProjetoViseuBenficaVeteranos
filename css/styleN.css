@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansB;
+    src: url(../letras/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansBI;
+    src: url(../letras/NunitoSans-BoldItalic.ttf);
+}
+
+
+#custom-header {
+
+    background-color: #FC0A0A;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black; 
+    box-shadow: 0 0 10px 1px black;
+    position: sticky; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;   
+    
+}
+#custom-header img {
+    width: 40%;
+    height: auto; 
+}
+
+#custom-main {
+    background-image: url('../imgs/calendarioFundo.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color:white ;
+}
+#title-section h1 {
+    font-family: NunitoSansBI;
+    padding-top: 5%;
+    padding-left: 5%;
+    color: #FFD700;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    
+    
+}
+#title-section h1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+#title-section h1.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}  
+
+
+#intro-section, #values-section, #final-message {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 8% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    max-width: 800px;
+}
+
+#timeline-section {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 15% auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    max-width: 800px;
+}
+
+#timeline-section h2 {
+    font-family: NunitoSansBI;
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-shadow: 
+        1px 1px 0px black,  
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+    
+}
+
+#timeline-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#timeline-section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 3px solid #FF6D00;
+    padding-left: 10px;
+}
+#timeline-section a{
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    color: white;
+    
+}
+#timeline-section a:hover{
+    transform: scale(1.08);
+}
+
+
+#intro-section span {
+    color: white; 
+    font-weight: bold; 
+    text-shadow: none; 
+    animation: goldenGlow 3s ease-in-out infinite alternate; 
+}
+
+
+@keyframes goldenGlow {
+    from {
+        color: white; 
+        text-shadow: none; 
+    }
+    to {
+        color: #FFD700; 
+        text-shadow: 0 0 0.5px #FFD700, 0 0 1px #FFC107, 0 0 1.5px #FFA000; 
+    }
+}
+
+
+
+#final-message p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+#custom-link {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+#custom-link img{
+    width: 2%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#custom-link:hover img {
+    transform: scale(1.5); 
+    filter: brightness(1.2); 
+ }
+
+ #final-message p {
+    opacity: 0; 
+    transition: opacity 5s ease-in-out; 
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+    #custom-header img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right:1% ;
+        padding-left:1% ;
+        width: 100%;
+        
+    }
+    
+    #custom-link img{
+
+        width: 10%;
+        
+    }
+    #title-section h1{
+        
+        font-size: 200%;
+        padding-top: 10%;
+    }
+    #values-section {
+        
+        padding-top:15%;
+        padding-bottom: 10%;
+        
+    }
+
+    #final-message  {
+        margin-top: 45%;
+        margin-bottom: 25%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    
+    
+    
+}
